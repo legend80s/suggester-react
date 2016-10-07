@@ -1,5 +1,5 @@
 # suggester-react
-Baidu and Youku Suggestion in React.js
+Baidu and Youku Suggestion in React.js without Redux
 
 ## Usage
 - `npm install`
