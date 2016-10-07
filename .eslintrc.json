@@ -1,0 +1,32 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "rules": {
+    "quotes": "warn",
+    "global-require": "warn",
+    "import/extensions": "off",
+    "no-confusing-arrow": "off",
+    "no-param-reassign": "warn",
+    "no-underscore-dangle": "warn",
+    "prefer-arrow-callback": "warn",
+    "max-len": ["warn", 200, 4, {"ignoreComments": true}],
+    "import/no-unresolved": [0, {"commonjs": true, "amd": true}],
+    "import/no-extraneous-dependencies": [
+      "error", {
+        "devDependencies": ["**/webpack.config.babel.js", "**/hot-server.js"]
+      }
+    ],
+    "generator-star-spacing": ["error", {"before": true, "after": true}]
+  },
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
